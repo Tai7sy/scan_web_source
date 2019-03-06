@@ -1,0 +1,13 @@
+<?php
+
+/** 
+* thinkphp
+* 近两个月的日志
+**/
+
+# $TP_MODULE = Admin|Home
+# $TP_APP = App|Application
+
+
+// http://example.com/Runtime/Logs/Home/18_06_04.log
+/Runtime/Logs/{$TP_MODULE}/date('y')_{/[date('mm',-1m)-date('mm')]/}_{/[01-31]/}.log

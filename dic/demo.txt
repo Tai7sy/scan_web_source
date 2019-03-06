@@ -1,0 +1,39 @@
+<?php
+// try these rules to learn how to use it
+
+/**
+* 说明:
+* #起始行 为变量声明区域
+* /起始行 为 url 区域
+* 其余行均可以作为注释使用
+
+* 语法: 
+* 变量需要 {} 标志符号
+* 枚举列表: {/[0-9]/} {/[a-z]/}
+* 数组枚举: {zip|rar|tar.gz|tar.xz}
+
+* 函数:
+* date($format, $add), 
+  $format参数: 
+   Y(四位年份) y(两位年份) 
+   mm/dd/hh/ii/ss(两位月/日/天/时/分/秒) m/d/h/i/s(月/日/天/时/分/秒)
+  $add参数: 增减时间, 如 -1d 为昨天此时
+
+* 如上月到本月月份['04','05']: 
+  {/[date('mm',-1m)-date('mm')]/}
+
+* 如上月到本月每一天['0401','0402',...'0531']: 
+  {/[date('mm',-1m)-date('mm')]/}{/[01-31]/}
+
+**/
+
+
+# $ext = zip|rar
+ 
+/{date('Y')}_{date('mm')}_{date('dd')}/{date('y')}_{date('m')}_{date('d')}.zip
+
+/{/[01-2]/}/{/[01-2]/}.zip
+
+/{/[date('mm',-1m)-date('mm')]/}.zip
+
+/backup.{$ext}

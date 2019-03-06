@@ -1,0 +1,9 @@
+<?php
+
+# $domain = %DOMAIN%
+# $domain_root = %DOMAIN_ROOT%
+# $domain_name = %DOMAIN_NAME%
+# $domain_file = {$domain}|{$domain_root}|{$domain_name}
+# $compress_ext = zip|rar
+
+/{/[date('mm',-1m)-date('mm')]/}/123.log

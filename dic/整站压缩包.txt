@@ -1,0 +1,50 @@
+<?php
+
+/**
+* ³£¼ûÍøÕ¾Ñ¹Ëõ°ü
+**/
+
+
+# $domain = %DOMAIN%
+# $domain_root = %DOMAIN_ROOT%
+# $domain_name = %DOMAIN_NAME%
+# $domain_file = {$domain}|{$domain_root}|{$domain_name}
+# $compress_ext = zip|rar|tar|tar.gz|tgz|tar.bz2|tar.xz|7z
+# $asp_ext = asp|aspx
+# $image_ext = jpg|jpeg|png|gif|bmp|webp
+
+
+/bak.{$compress_ext}
+/backup.{$compress_ext}
+/old.{$compress_ext}
+
+/{$domain_file}.{$compress_ext}
+/{$domain_file}_bak.{$compress_ext}
+/{$domain_file}_backup.{$compress_ext}
+/{$domain_file}_old.{$compress_ext}
+
+/web.{$compress_ext}
+/www.{$compress_ext}
+/wwwroot.{$compress_ext}
+
+/web_backup.{$compress_ext}
+/www_backup.{$compress_ext}
+/wwwroot_backup.{$compress_ext}
+
+/web_bak.{$compress_ext}
+/www_bak.{$compress_ext}
+/wwwroot_bak.{$compress_ext}
+
+/web_old.{$compress_ext}
+/www_old.{$compress_ext}
+/wwwroot_old.{$compress_ext}
+
+/update.{$compress_ext}
+/src.{$compress_ext}
+/source.{$compress_ext}
+
+/src_bak.{$compress_ext}
+/source_bak.{$compress_ext}
+
+/src_backup.{$compress_ext}
+/source_backup.{$compress_ext}

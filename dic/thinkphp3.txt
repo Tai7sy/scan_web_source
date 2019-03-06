@@ -1,0 +1,22 @@
+<?php
+
+/** 
+* thinkphp
+* 近两个月的日志
+**/
+
+# $TP_MODULE = Admin|Home
+# $TP_APP = App|Application
+
+
+// http://example.com/ThinkPHP/Runtime/Logs/18_06_04.log  ThinkPHP 3.X
+/ThinkPHP/Runtime/Logs/date('y')_{/[date('mm',-1m)-date('mm')]/}_{/[01-31]/}.log
+
+// http://example.com/Home/Runtime/Logs/18_06_04.log
+/{$TP_MODULE}/Runtime/Logs/date('y')_{/[date('mm',-1m)-date('mm')]/}_{/[01-31]/}.log
+
+// http://example.com/App/Runtime/Logs/18_06_04.log
+/{$TP_APP}/Runtime/Logs/date('y')_{/[date('mm',-1m)-date('mm')]/}_{/[01-31]/}.log
+
+// http://example.com/App/Runtime/Logs/Home/18_06_04.log
+/{$TP_APP}/Runtime/Logs/{$TP_MODULE}/date('y')_{/[date('mm',-1m)-date('mm')]/}_{/[01-31]/}.log

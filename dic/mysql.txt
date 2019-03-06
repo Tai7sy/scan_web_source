@@ -1,0 +1,15 @@
+<?php
+
+
+# $file = index.php|server_sql.php|sql.php
+
+/phpMyAdmin/{$file}
+/phpmyadmin/{$file}
+/phpMyAdmin2/{$file}
+/pma/{$file}
+/myadmin/{$file}
+/mysql/{$file}
+/my/{$file}
+/dede/{$file}
+/db/{$file}
+/dbadmin/{$file}
